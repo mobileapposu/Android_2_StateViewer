@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/background_material_dark">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="25sp"
+        android:id="@+id/state_name_tv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/state_name_tv"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/state_population_tv"/>
+
+
+</RelativeLayout>
