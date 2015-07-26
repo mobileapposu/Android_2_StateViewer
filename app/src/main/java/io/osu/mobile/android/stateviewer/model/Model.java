@@ -17,15 +17,23 @@ import java.util.List;
 public class Model {
 
 	private List<State> mStates;
+	// This type of design pattern is called a singleton. It's where there's one instance of a
+	// given class (in this case, Model). So instead of calling new Model() and then
+	// passing that object as an argument to every class, every class can just get the single
+	// Model instance by calling Model.getInstance();
 	private static Model mInstance;
 
+
 	public static Model getInstance(){
+		// if the instance hasn't been created yet (first time calling getInstance()) then
+		// create the instance.
 		if(mInstance == null){
 			mInstance = new Model();
 		}
 		return mInstance;
 	}
 
+	// Make the constructor private() so it can only be called inside the Model class.
 	private Model(){
 		// create our list of states
 		mStates = new ArrayList<State>();
